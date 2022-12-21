@@ -21,7 +21,7 @@ Integrasi Romberg merupakan aplikasi dari aturan Integrasi Trapezoidal yang dike
 Bisa dilihat dari tabel perhitungan di atas, bahwasannya tiap penerapan Richardson Extrapolation akan meningkatkan order dari derajat error/kesalahan yang didapatkan dari hasil integrasi sebanyak 2. Nantinya, estimasi integrasi yang paling akurat atau yang memiliki nilai error paling kecil adalah yang berada pada ujung kanan diagonal paling bawah dari tabel Romberg yang diperoleh menggunakan perhitungan dari nilai awal yang ada. Hasil yang didapatkan bisa memiliki nilai akurasi yang jauh lebih tinggi dikarenakan adanya pengurangan dari hasil Integrasi Trapezoidal dengan faktor error yang ada.
 
 ## Code
-```p
+```py
 # Import library yang diperlukan
 import numpy as np
 import math
