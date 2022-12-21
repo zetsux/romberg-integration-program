@@ -45,19 +45,30 @@ print('Silahkan masukkan Batas Atas awal yang diinginkan : ')
 upperBound = int(input())
 print("")
 
+"""
+    Variabel-variabel dalam fungsi
+    
+    a : batas bawah
+    b : batas atas
+    n : jumlah pias (pada Integrasi Trapezoidal)
+    r : jumlah baris tabel (pada Integrasi Romberg)
+    iTn : hasil Integrasi Trapezoidal dengan jumlah pias n
+    iR[k, j] : hasil Integrasi Romberg dengan Richardson Extrapolation di kolom ke-(k + 1) dan baris ke-(j + 1)
+"""
+
 # Fungsi Perhitungan Integrasi Trapezoidal
 def trapezoidalIntegration(n, a, b):
 
     tmp = a
 
     # Formula Integrasi Trapezoidal
-    h = (b - a) / n
+    h = (b - a)/n
 
     # Perhitungan Integrasi Trapezoidal untuk jumlah pias n
     iTn = y(a)
     for k in range(1, n):
-        tmp = tmp + h
-        iTn += 2*y(tmp)
+        tmp += h
+        iTn += (2*y(tmp))
 
     return ((iTn + y(b))*h)/2
 
@@ -71,7 +82,7 @@ def rombergIntegration(r, a, b):
 
         # Perhitungan Integrasi Romberg dengan Rekursi
         for j in range(0, k):
-            iR[k, j+1] = (4**(j+1) * iR[k, j] - iR[k-1, j]) / (4**(j+1) - 1)
+            iR[k, j+1] = ((4**(j+1) * iR[k, j]) - iR[k-1, j]) / (4**(j+1) - 1)
 
         # Menampilkan hasil baris ke-(k + 1) dari tabel Romberg
         print(iR[k, 0:k+1])
