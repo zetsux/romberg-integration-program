@@ -11,7 +11,7 @@ Integrasi Romberg merupakan aplikasi dari aturan Integrasi Trapezoidal yang dike
 </p>
 
 - O(h<sup>i</sup>) : Derajat Error, nilainya berbanding terbalik dengan order/nilai pangkat dari h yakni i, dimana semakin besar pangkatnya maka semakin kecil nilai errornya
-- A<sub>i</sub> : Hasil Integrasi Trapezoidal, dengan jumlah pias (n) bernilai 2^(i-1)
+- A<sub>i</sub> : Hasil Integrasi Trapezoidal, dengan jumlah pias (n) bernilai 2<sup>(i-1)</sup>
 - B<sub>i</sub>,C<sub>i</sub>,D<sub>i</sub>,E<sub>i</sub>,F<sub>i</sub>,… = R<sub>(i,2)</sub>,R<sub>(i,3)</sub>,R<sub>(i,4)</sub>,R<sub>(i,5)</sub>,R<sub>(i,6)</sub>,… : Hasil dari Integrasi Romberg menggunakan Richardson Extrapolation dengan menggunakan nilai-nilai yang telah didapatkan sebelumnya dengan formula sebagai berikut,
 
 <p align="center">
