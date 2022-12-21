@@ -7,7 +7,7 @@ A program that implements Romberg Integration to calculate Integration
 Integrasi Romberg merupakan aplikasi dari aturan Integrasi Trapezoidal yang dikembangkan lebih lanjut menggunakan perluasan dengan Richardson Extrapolation untuk memperoleh nilai integrasi yang lebih baik dan akurat. Metode ini dipergunakan dikarenakan Integrasi Trapezoidal masih memiliki akurasi hasil yang rendah, atau dengan kata lain nilai error yang cukup besar untuk nilai integrasi besar. Maka, untuk mengatasi kekurangan dari metode Integrasi Trapezoidal tersebut, digunakanlah Richardson Extrapolation untuk mencoba mengestimasi nilai errornya untuk nantinya dikurangkan dengan hasil estimasi yang diperoleh dari Integrasi Trapezoidal sehingga akurasi yang didapatkan meningkat secara drastis. Metode ini dapat diilustrasikan dengan membuat suatu tabel bernama Tabel Romberg yang bentuk dan isinya kurang lebih sebagai berikut,
 
 <p align="center">
-  <img width="640" src="https://cdn.discordapp.com/attachments/995337235211763722/1055121117184012398/image.png" alt="Romberg Table Image">
+  <img width="640" src="https://media.discordapp.net/attachments/995337235211763722/1055128261845340270/image.png" alt="Romberg Table Image">
 </p>
 
 - O(h<sup>i</sup>) : Derajat Error, nilainya berbanding terbalik dengan order/nilai pangkat dari h yakni i, dimana semakin besar pangkatnya maka semakin kecil nilai errornya
@@ -116,3 +116,6 @@ With the input of function f(x) = e<sup>x</sup>, the output of the code is as fo
 <p align="center">
   <img width="640" src="https://cdn.discordapp.com/attachments/995337235211763722/1055120139407859763/image.png" alt="Romberg Table Image">
 </p>
+
+## Reference
+- Metode Numerik (Rinaldi Munir)
