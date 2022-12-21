@@ -3,7 +3,7 @@
 ## Description
 A program that implements Romberg Integration to calculate Integration
 
-## Integrasi Romberg and it's superiority to Trapezoidal Integration
+## Why Romberg Integration is better than Trapezoidal Integration?
 Integrasi Romberg merupakan aplikasi dari aturan Integrasi Trapezoidal yang dikembangkan lebih lanjut menggunakan perluasan dengan Richardson Extrapolation untuk memperoleh nilai integrasi yang lebih baik dan akurat. Metode ini dipergunakan dikarenakan Integrasi Trapezoidal masih memiliki akurasi hasil yang rendah, atau dengan kata lain nilai error yang cukup besar untuk nilai integrasi besar. Maka, untuk mengatasi kekurangan dari metode Integrasi Trapezoidal tersebut, digunakanlah Richardson Extrapolation untuk mencoba mengestimasi nilai errornya untuk nantinya dikurangkan dengan hasil estimasi yang diperoleh dari Integrasi Trapezoidal sehingga akurasi yang didapatkan meningkat secara drastis. Metode ini dapat diilustrasikan dengan membuat suatu tabel bernama Tabel Romberg yang bentuk dan isinya kurang lebih sebagai berikut,
 
 <p align="center">
